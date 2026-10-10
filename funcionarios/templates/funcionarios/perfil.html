@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+    <h1>Perfil do Funcionário</h1>
+
+    <p><strong>Usuário:</strong> {{ funcionario.username }}</p>
+    <p><strong>Nome:</strong> {{ funcionario.get_full_name|default:"Não informado" }}</p>
+    <p><strong>E-mail:</strong> {{ funcionario.email|default:"Não informado" }}</p>
+
+    <a href="{% url 'painel_funcionarios' %}">
+        Voltar ao painel
+    </a>
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+    <h1>Área Restrita de Funcionários</h1>
+
+    <p>Bem-vindo ao sistema!</p>
+    <p>Esta página é pública e pode ser acessada por qualquer visitante.</p>
+
+    <a href="{% url 'login' %}">Entrar no sistema</a>
+{% endblock %}
